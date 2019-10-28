@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  
+  <?php include('https://cryptofreedomfactory.com/php/meta-tags.php'); ?>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body>
+
+
+  <!-- Page Content -->
+  <section id="mainContain">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Purchase <script>document.write(window.location.hostname);</script></h1>
+          <p>We've been holding this premium domain name for you,
+            <br/><script>document.write(window.location.hostname);</script> can be yours at a great and affordable price,
+            <br/>all you have to do is email us at <a href="mailto:hosting@ali2star.com">hosting@ali2star.com</a></p>
+          <p>Alternatively send us your name and email below and we will get back to you.</p>
+          <p>For more technical information click on: <script>document.write(window.location.hostname);</script></p>
+          
+        </div>
+</div> <!-- end of row -->
+
+      <div class="row">
+        <div class="col-lg-8">
+ <form action="https://formspree.io/hosting@ali2star.com" method="POST">
+   <span>Name </span><input type="text" name="name" class="formName" />
+   <span>Email </span><input type="email" name="_replyto" class="formEmail" />
+  <input type="submit" value="Send" />
+</form>
+      
+        </div>
+      </div>
+    </div>
+    
+    
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark fixed-bottom" style="background-color:#1e2125">
+    <div class="container">
+      <p style="margin-bottom:0">For additional premium domain names and services please visit us on <a href="http://www.cryptofreedomfactory.com" target="_blank">cryptofreedomfactory.com</a></p>
+    </div>
+  </nav>
+
+  </section>
+  
+  
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+  
+  
+  
+<!-- scripts -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+  
+
+</body>
+</html>
